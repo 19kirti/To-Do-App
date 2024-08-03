@@ -1,0 +1,23 @@
+h1{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: blue;
+}
+
+.row{
+    padding: 10px;
+
+}
+
+.btn{
+   min-width: 100px;
+
+}
+
+input{
+    
+    min-width: 200px;
+    
+}
