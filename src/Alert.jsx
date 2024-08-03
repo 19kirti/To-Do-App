@@ -1,6 +1,10 @@
 import React from 'react'
 
+/*Alert Component*/
+
 export default function Alert(props) {
+
+/*function to capitalize the first character of the alert type*/
 
   const capitalize = (word) => {
     const newWord = word.toLowerCase();

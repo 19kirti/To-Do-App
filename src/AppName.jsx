@@ -1,7 +1,9 @@
-function AppName(props){
-    return(
-        <h1 style={{color:props.mode==='light'? 'black' : 'white'}}>{props.heading}</h1>
-    )
-}
+import React from 'react'
 
-export default AppName;
+/*Heading Component*/
+
+export default function AppName(props) {
+  return (
+    <h1 style={{color:props.mode==='light'? 'black' : 'white'}}>{props.heading}</h1>
+  )
+}

@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 
+/*ToDo list Component*/
+
 export default function ToDo(props) {
 
     const[todo, setTodo] = useState([]);
@@ -7,7 +9,7 @@ export default function ToDo(props) {
     const[isEditing, setIsEditing] = useState(false);
     const[currentTodoIndex, setCurrentTodoIndex] = useState(null);
  
-    const addingOrEditing = () => {
+    const addingOrEditing = () => {                                 /*function for adding the ToDo*/
         if(input.trim()===""){
             props.showAlert("Please enter some ToDo!", "warning")
             return;
@@ -27,17 +29,17 @@ export default function ToDo(props) {
     setInput("");
 }
 
-    const handleOnChange = (event) => {
+    const handleOnChange = (event) => {                          /* Change handled*/
         setInput(event.target.value);
     }
 
-    const editing = (index) => {
+    const editing = (index) => {                                 /*function for editing ToDo*/
         setInput(todo[index]);
         setIsEditing(true);
         setCurrentTodoIndex(index);
     }
 
-    const removing = (index) => {
+    const removing = (index) => {                                 /*function for removing ToDo*/
         const newTodos = [...todo];  
         newTodos.splice(index, 1);  
         setTodo(newTodos); 

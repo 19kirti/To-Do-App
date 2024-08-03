@@ -1,5 +1,7 @@
 import React from 'react'
 
+/*NavBar Component*/
+
 export default function NavBar(props) {
   return (
     <div>

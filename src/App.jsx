@@ -8,12 +8,13 @@ import NavBar from "./NavBar";
 import React from "react";
 import Alert from "./Alert";
 
+/* App Component containing all the other components */
 
 function App() {
 
-  const[mode, setMode] = useState('light');
+  const[mode, setMode] = useState('light');  /*state for changing the mode*/
 
-  const toggleMode = () => {
+  const toggleMode = () => {                 /*function for changing the */
     if(mode === 'light'){
       setMode('dark');
       document.body.style.backgroundColor = 'black';
@@ -24,9 +25,9 @@ function App() {
   }
 }
 
-const[alert, setAlert] = useState(null);
+const[alert, setAlert] = useState(null);   /*state for the alerts*/
 
-const showAlert = (message, type) => {
+const showAlert = (message, type) => {     /*function for the alerts*/
   setAlert({
     msg: message,
     type: type
@@ -42,7 +43,7 @@ const showAlert = (message, type) => {
   return (
     <>
     <div>
-      <NavBar mode={mode} toggleMode={toggleMode}/>
+      <NavBar mode={mode} toggleMode={toggleMode}/> 
     </div>
 
     <Alert alert={alert}/>
