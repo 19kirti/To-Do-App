@@ -57,14 +57,14 @@ export default function ToDo(props) {
 
     <ul class="mx-5 list-group" style={{color: props.mode==='light'? 'black': 'white'}}>
     {todo.map((todos, index) => (
-                    <li key={index} class="d-flex justify-content-between">
-                        {todos}
-                        <div class="d-flex justify-content-between">
-                        <button class="btn btn-secondary my-3 mx-5 btn-lg" onClick={() => editing(index)}>Edit</button>
-                        <button class="btn btn-warning my-3 mx-5 btn-lg" onClick={() => removing(index)}>Remove</button>
-                        </div>
-                    </li>
-                ))}
+        <li key={index} class="d-flex justify-content-between">
+         {todos}
+        <div class="d-flex justify-content-between">
+        <button class="btn btn-secondary my-3 mx-5 btn-lg" onClick={() => editing(index)}>Edit</button>
+        <button class="btn btn-warning my-3 mx-5 btn-lg" onClick={() => removing(index)}>Remove</button>
+        </div>
+        </li>
+        ))}
 
     </ul>
   </div>
