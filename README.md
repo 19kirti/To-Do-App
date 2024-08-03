@@ -16,6 +16,7 @@ iTask- The To-Do-App is a web-based application that is created using Vite, whic
 - HTML
 - CSS
 - JavaScript
+- Bootstrap
 - React
 
 ## Installation
